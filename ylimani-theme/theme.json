@@ -1,0 +1,86 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 2,
+  "settings": {
+    "appearanceTools": true,
+    "color": {
+      "palette": [
+        { "slug": "primary", "name": "Primary", "color": "#2353FF" },
+        { "slug": "secondary", "name": "Secondary", "color": "#0EA5E9" },
+        { "slug": "accent", "name": "Accent", "color": "#F97316" },
+        { "slug": "base", "name": "Base", "color": "#0F172A" },
+        { "slug": "muted", "name": "Muted", "color": "#64748B" },
+        { "slug": "background", "name": "Background", "color": "#FFFFFF" }
+      ],
+      "gradients": [],
+      "custom": false
+    },
+    "typography": {
+      "fontFamilies": [
+        {
+          "fontFamily": "system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica Neue, Arial, \"Apple Color Emoji\", \"Segoe UI Emoji\"",
+          "name": "System Sans",
+          "slug": "system-sans"
+        },
+        {
+          "fontFamily": "\"Inter var\", Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial, \"Apple Color Emoji\", \"Segoe UI Emoji\"",
+          "name": "Inter",
+          "slug": "inter",
+          "fontFace": [
+            {
+              "fontFamily": "Inter",
+              "src": ["https://rsms.me/inter/font-files/InterVariable.woff2?v=4.1"],
+              "fontWeight": "100 900",
+              "fontStyle": "normal",
+              "fontDisplay": "swap"
+            }
+          ]
+        }
+      ],
+      "fluid": true,
+      "dropCap": false
+    },
+    "spacing": {
+      "spacingScale": {
+        "steps": 7,
+        "mediumStep": 1.25,
+        "unit": "rem"
+      },
+      "units": ["px", "rem", "%", "vw", "vh"]
+    },
+    "layout": {
+      "contentSize": "720px",
+      "wideSize": "1200px"
+    }
+  },
+  "styles": {
+    "typography": {
+      "fontFamily": "var(--wp--preset--font-family--system-sans)",
+      "lineHeight": "1.65"
+    },
+    "color": {
+      "background": "var(--wp--preset--color--background)",
+      "text": "var(--wp--preset--color--base)"
+    },
+    "elements": {
+      "link": {
+        "color": { "text": "var(--wp--preset--color--primary)" }
+      },
+      "heading": {
+        "typography": { "fontFamily": "var(--wp--preset--font-family--inter)" }
+      }
+    }
+  },
+  "templates": {
+    "page": {
+      "title": "Page",
+      "postTypes": ["page"]
+    },
+    "single": {
+      "title": "Single",
+      "postTypes": ["post"]
+    },
+    "archive": { "title": "Archive" },
+    "index": { "title": "Index" }
+  }
+}
